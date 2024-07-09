@@ -43,7 +43,7 @@ def getDataFromFile(file):
 def launchRepoPipe(id, start_branch):
     global queue
     global repositories
-    conn = http.client.HTTPSConnection("gitlab.rosatom.local", context=ssl_context, timeout=10 )
+    conn = http.client.HTTPSConnection("gitlab.host", context=ssl_context, timeout=10 )
     headers = {
         'PRIVATE-TOKEN': '9zFDNtcWsPz6xWCnWeQH',
         'Content-Type': 'application/json'
